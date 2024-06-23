@@ -1,6 +1,6 @@
-for i in range(12):
-    print(i)
-    i = i +1
+for x in range(12):
+    x = x +1
+    print(f"x = {x}")
 
 '''import pygame, sys, math
 

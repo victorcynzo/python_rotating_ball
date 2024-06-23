@@ -28,7 +28,7 @@ def main():
 
         x = int(math.cos(ANGLE))
 
-        for i in range(11): #create 12 circles
+        for i in range(2): #create 12 circles
             pos_x = (x * 200) + (SCREEN_HEIGHT/2)
             y = int(math.sin(ANGLE) * 200) + (SCREEN_WIDTH/2)
             color = ((math.cos(ANGLE)) + 1) * 100

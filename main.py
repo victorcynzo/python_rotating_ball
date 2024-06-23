@@ -24,13 +24,13 @@ def main():
         x = int(math.cos(ANGLE) * 200) + (SCREEN_HEIGHT/2)
         y = int(math.sin(ANGLE) * 200) + (SCREEN_WIDTH/2)
 
-        color = ((math.cos(ANGLE)) + 1) * 100
+        color = 200 - (((math.cos(ANGLE)) + 1) * 100)
         pygame.draw.circle(screen, (color, color, color), (x, y), BALL_RADIUS)
 
         x_2 = int(math.cos(ANGLE + math.pi) * 200) + (SCREEN_HEIGHT/2)
         y_2 = int(math.sin(ANGLE + math.pi) * 200) + (SCREEN_WIDTH/2)
 
-        color_2 = ((math.cos(ANGLE + math.pi)) + 1) * 100
+        color_2 = 200 - (((math.cos(ANGLE + math.pi)) + 1) * 100)
         pygame.draw.circle(screen, (color_2, color_2, color_2), (x_2, y_2), BALL_RADIUS)
 
         pygame.display.update()

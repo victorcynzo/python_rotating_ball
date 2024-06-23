@@ -26,19 +26,19 @@ def main():
         y = int(math.sin(ANGLE) * 200) + (SCREEN_WIDTH/2)
 
         # need to fix colour, this is based on position on screen, not position in function...
-        color = 200-((x/2)-100) #goes from 0 - 200, how to invert it
+        # color = 200-((x/2)-100) #goes from 0 - 200, how to invert it
+        color = ((math.cos(ANGLE)) + 1) * 100
         pygame.draw.circle(screen, (color, color, color), (x, y), BALL_RADIUS)
 
         x_2 = int(math.cos(ANGLE + math.pi) * 200) + (SCREEN_HEIGHT/2)
         y_2 = int(math.sin(ANGLE + math.pi) * 200) + (SCREEN_WIDTH/2)
 
-        color_2 = 200-((x_2/2) - 100)
+        # color_2 = 200-((x_2/2) - 100)
+        color_2 = ((math.cos(ANGLE + math.pi)) + 1) * 100
         pygame.draw.circle(screen, (color_2, color_2, color_2), (x_2, y_2), BALL_RADIUS)
 
         pygame.display.update()
         ANGLE += ROTATE_SPEED
-
-        print(math.sin(ANGLE)) #ranges from -1 to 1
   
     pygame.quit()
 

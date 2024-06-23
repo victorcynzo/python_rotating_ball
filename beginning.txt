@@ -10,3 +10,9 @@ ball_y = cos
 z-axis: bigger and smaller ASCII characters
 or shadow: left is dark, right is light, characters transform and grow towards right
     - characters or simple dots - pygame
+
+change ball colour based on x position
+sine wave for x position
+one full rotation is two pi 
+start at full left and full right position
+    - meaning that cos(0) and cos(pi) are left and right respectably

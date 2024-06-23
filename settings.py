@@ -1,6 +1,6 @@
 #constants
 BACKGROUND_COLOUR = 'white'
-BALL_COLOUR = 'black'
+BALL_COLOUR = [0,0,0] #black, go to white = [125,125,125]
 BALL_RADIUS = 10
 SCREEN_WIDTH: int = 800
 SCREEN_HEIGHT: int = 800

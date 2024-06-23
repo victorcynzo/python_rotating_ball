@@ -1,5 +1,8 @@
 #constants
 BACKGROUND_COLOUR = 'white'
+BALL_COLOUR = 'black'
+BALL_RADIUS = 20
 SCREEN_WIDTH: int = 800
 SCREEN_HEIGHT: int = 800
 FPS = 60
+ANGLE = 0

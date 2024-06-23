@@ -13,13 +13,19 @@ def main():
 
     while running:
         clock.tick(FPS)
+        screen.fill(BACKGROUND_COLOUR)
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
-            
-            screen.fill(BACKGROUND_COLOUR)
-            pygame.display.update()
+        
+        x = int(math.cos(angle) * 100) + 100
+        y = int(math.sin(angle) * 100) + 100
+
+        angle += 0.05
+        
+        pygame.draw.circle(screen, BALL_COLOUR, (x, y), BALL_RADIUS)
+        pygame.display.update()
         
     pygame.quit()
 

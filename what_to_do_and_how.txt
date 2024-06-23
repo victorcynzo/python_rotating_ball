@@ -24,6 +24,9 @@ y is 0 - 125 variable
 y = 0 + (125/(x/400)+1)
     cannot compute because devision by 0
 
+fixed that colour is now based on the position in the sin wave and not the x position of the ball
+better because ball position can be changed and color gradients will stay the same
+
 Maybe make a for loop for creating positions of balls in cos/sin
     Put all those positions in a list for balls
     then for loop for drawing every rectangle in the list

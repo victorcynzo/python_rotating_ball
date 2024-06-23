@@ -1,8 +1,7 @@
-import pygame #screen
-import math #for pi, cos, sin
+import pygame
+import math
 from settings import *
 
-#pygame settup
 pygame.init()
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 clock = pygame.time.Clock()

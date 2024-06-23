@@ -26,15 +26,12 @@ def main():
             if event.type == pygame.QUIT:
                 running = False
 
-        x = int(math.cos(ANGLE))
-
-        for i in range(2): #create 12 circles
-            pos_x = (x * 200) + (SCREEN_HEIGHT/2)
+        for i in range(10): #create 12 circles
+            x = int(math.cos(ANGLE) * 200) + (SCREEN_HEIGHT/2)
             y = int(math.sin(ANGLE) * 200) + (SCREEN_WIDTH/2)
-            color = ((math.cos(ANGLE)) + 1) * 100
-
-            pygame.draw.circle(screen, (color, color, color), (pos_x, y), BALL_RADIUS)
-            x += 1/6*math.pi
+            pygame.draw.circle(screen, (BALL_COLOUR), (x, y), BALL_RADIUS)
+            x += 10
+            y += 10
             
         pygame.display.update()
         ANGLE += ROTATE_SPEED

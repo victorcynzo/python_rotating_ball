@@ -23,3 +23,7 @@ x = 0 - 400 as variable (in code x -200 cause starts at 200)
 y is 0 - 125 variable
 y = 0 + (125/(x/400)+1)
     cannot compute because devision by 0
+
+Maybe make a for loop for creating positions of balls in cos/sin
+    Put all those positions in a list for balls
+    then for loop for drawing every rectangle in the list

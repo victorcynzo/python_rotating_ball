@@ -1,0 +1,12 @@
+pygame
+
+rotate 2d ball clockwise
+ball_x = sin
+ball_y = cos
+    - 2 particles moving 
+    - x and y axis
+    - one full sin/cos cycle = 2pi 
+
+z-axis: bigger and smaller ASCII characters
+or shadow: left is dark, right is light, characters transform and grow towards right
+    - characters or simple dots - pygame

@@ -16,3 +16,10 @@ sine wave for x position
 one full rotation is two pi 
 start at full left and full right position
     - meaning that cos(0) and cos(pi) are left and right respectably
+
+from 0 to 125 in 400 steps
+x = 0 - 400 as variable (in code x -200 cause starts at 200)
+
+y is 0 - 125 variable
+y = 0 + (125/(x/400)+1)
+    cannot compute because devision by 0

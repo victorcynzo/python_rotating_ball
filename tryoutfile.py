@@ -1,4 +1,8 @@
-import pygame, sys, math
+for i in range(12):
+    print(i)
+    i = i +1
+
+'''import pygame, sys, math
 
 run = True
 white = (255, 255, 255)
@@ -23,4 +27,4 @@ while run:
     pygame.display.flip()
     angle += 0.05
 
-pygame.quit()
+pygame.quit()'''

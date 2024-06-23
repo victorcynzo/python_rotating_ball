@@ -18,11 +18,9 @@ def main():
             if event.type == pygame.QUIT:
                 running = False
         
-        #change ball colour from black to grey to black based on x pos (left to right)
-        #automate ball spawn so don't have to retype the next few lines for each line
+        # automate ball spawn so don't have to retype the next few lines for each line
+        # need to create class for that
         # or make a ball.py file with a functino for the ball drawing and spawning
-
-        #ball colour probably needs its own function...
 
         x = int(math.cos(ANGLE) * 200) + (SCREEN_HEIGHT/2)
         y = int(math.sin(ANGLE) * 200) + (SCREEN_WIDTH/2)

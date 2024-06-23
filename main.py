@@ -9,8 +9,7 @@ clock = pygame.time.Clock()
 
 def main():
     running = True
-    update_freq = FPS
-
+    ANGLE = START_SPEED
     while running:
         clock.tick(FPS)
         screen.fill(BACKGROUND_COLOUR)
@@ -19,13 +18,12 @@ def main():
             if event.type == pygame.QUIT:
                 running = False
         
-        x = int(math.cos(angle) * 100) + 100
-        y = int(math.sin(angle) * 100) + 100
-
-        angle += 0.05
-        
+        x = int(math.cos(ANGLE) * 200) + (SCREEN_HEIGHT/2)
+        y = int(math.sin(ANGLE) * 200) + (SCREEN_WIDTH/2)
         pygame.draw.circle(screen, BALL_COLOUR, (x, y), BALL_RADIUS)
+
         pygame.display.update()
+        ANGLE += ROTATE_SPEED
         
     pygame.quit()
 

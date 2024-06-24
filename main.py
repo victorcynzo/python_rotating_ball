@@ -17,13 +17,16 @@ def main():
             if event.type == pygame.QUIT:
                 running = False
         
+        index = 0
+
         for i in range(23):
             pos = (i / 23) * (2 * math.pi)
             x = (math.cos(ANGLE + pos) * 200) + (SCREEN_HEIGHT/2)
             y = (math.sin(ANGLE + pos) * 200) + (SCREEN_WIDTH/2)
             color = 200 - ( (math.cos(ANGLE + pos ) + 1) * 100 )
             pygame.draw.circle(screen, (color, color, color), (x, y), BALL_RADIUS)
-            print(i)
+            print(index)
+            index += 1
 
         pygame.display.update()
         ANGLE += ROTATE_SPEED

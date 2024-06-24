@@ -30,3 +30,5 @@ better because ball position can be changed and color gradients will stay the sa
 Maybe make a for loop for creating positions of balls in cos/sin
     Put all those positions in a list for balls
     then for loop for drawing every rectangle in the list
+
+for loop keeps generating balls and doesn't stop at 24, need to fix

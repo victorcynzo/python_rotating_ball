@@ -39,3 +39,5 @@ Mutltiple circles full of balls
     function for generating distance from centre
     function for generating correct size
     function for generating correct colour
+
+should probably work with rect or sprites -> collision function and are objects(?) so can work with it better than only draw

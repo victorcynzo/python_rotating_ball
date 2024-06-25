@@ -25,7 +25,6 @@ def main():
             y = (math.sin(ANGLE + pos) * 200) + (SCREEN_WIDTH/2)
             color = 200 - ( (math.cos(ANGLE + pos ) + 1) * 100 )
             pygame.draw.circle(screen, (color, color, color), (x, y), BALL_RADIUS)
-            print(index)
             index += 1
 
         pygame.display.update()

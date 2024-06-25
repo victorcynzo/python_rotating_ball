@@ -32,3 +32,10 @@ Maybe make a for loop for creating positions of balls in cos/sin
     then for loop for drawing every rectangle in the list
 
 for loop keeps generating balls and doesn't stop at 24, need to fix
+    maybe that's fixed
+
+Mutltiple circles full of balls
+    function for generating less balls each time, maybe in steps of 2 or 3
+    function for generating distance from centre
+    function for generating correct size
+    function for generating correct colour
